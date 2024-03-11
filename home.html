@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="home.css" />
+    <script
+      type="text/javascript"
+      src="home.js"></script>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cities</a></li>
+      </ul>
+    </nav>
+    <button onclick="darkLightMode()">LIGHT/DARK MODE</button>
+    <section>
+
+      <h4>CITIES</h4>
+      <button onclick="sortTable()">SORT TABLE</button>
+      <input
+        type="text"
+        id="searchInput"
+        onkeyup="citySearch()"
+        placeholder="Search City" />
+
+      <table id="citiesTable">
+        <tr class="header">
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+            <td>Vancouver</td>
+            <td>Canada</td>
+          </tr>
+        <tr>
+          <td>Berlin</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>London</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Munich</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Manchester</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Paris</td>
+          <td>France</td>
+        </tr>
+        <tr>
+          <td>Rome</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>Stockholm</td>
+          <td>Sweden</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

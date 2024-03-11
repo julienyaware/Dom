@@ -1,0 +1,95 @@
+:root {
+    --themeColor: aliceblue;
+    --darkColor: #4a4f64;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--darkColor);
+}
+
+body {
+    background-color: #ccc;
+    padding: 25px;
+    font-size: 25px;
+    color: black;
+
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+    background: var(--themeColor);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+
+}
+
+.main-nav a:hover {
+    background: var(--darkColor);
+    color: var(--light);
+}
+
+button {
+    background: var(--darkColor);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+
+}
+
+#searchInput {
+    background-color: aliceblue;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    width: 80%;
+    border: 1px solid aliceblue;
+    margin-bottom: 12px;
+}
+
+#citiesTable {
+    border: 1px solid aliceblue;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px;
+}
+
+#citiesTable th,
+#citiesTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#citiesTable tr {
+    border-bottom: 1px solid aliceblue;
+}
+
+#citiesTable tr:hover {
+    background-color: aliceblue;
+}
+
+#citiesTable tr.header {
+    background-color: var(--darkColor);
+}
